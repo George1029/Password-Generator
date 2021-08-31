@@ -19,50 +19,50 @@ function writePassword() {
 function generatePassword() {
   //checking how long the password will be //
 
-var passwordLength = prompt("Enter how many characters you would like your password to be, must be between 8 - 128 characters.");
-var confirmPasswordLength = parseInt(passwordLength);
-console.log(confirmPasswordLength)
+  var passwordLength = prompt("Enter how many characters you would like your password to be, must be between 8 - 128 characters.");
+  var confirmPasswordLength = parseInt(passwordLength);
+  console.log(confirmPasswordLength)
 
-if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
-  alert ("Invalid choice. Try again.");
-return;
-}
-// confirm if they want lowercase letters//
-var lowerCaseConf = confirm("Do you want lowercase letters?");
-if (lowerCaseConf === true){
-  for (var i = 0; i < lowerCase.length; i++){
-    confirmations.push(lowerCase[i]);
+  if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
+    alert("Invalid choice. Try again.");
+    return;
   }
-}
-// confirm if they want uppercase letters. //
+  // confirm if they want lowercase letters//
+  var lowerCaseConf = confirm("Do you want lowercase letters?");
+  if (lowerCaseConf === true) {
+    for (var i = 0; i < lowerCase.length; i++) {
+      confirmations.push(lowerCase[i]);
+    }
+  }
+  // confirm if they want uppercase letters. //
 
-var upperCaseConf = confirm("Do you want uppercase letters?");
-if (upperCaseConf === true) {
-  for (var i = 0; i < upperCase.length; i++){
-    confirmations.push(upperCase[i]);
+  var upperCaseConf = confirm("Do you want uppercase letters?");
+  if (upperCaseConf === true) {
+    for (var i = 0; i < upperCase.length; i++) {
+      confirmations.push(upperCase[i]);
+    }
   }
-}
-var numberConf = confirm("Do you want numbers?");
-if (numberConf === true){
-  for (var i = 0; i < numbers.length; i++){
-    confirmations.push(numbers[i]);
+  var numberConf = confirm("Do you want numbers?");
+  if (numberConf === true) {
+    for (var i = 0; i < numbers.length; i++) {
+      confirmations.push(numbers[i]);
+    }
   }
-}
-var specialConf = confirm("Do you want characters?");
-if (specialConf === true){
-  for (var i = 0; i < special.length; i++){
-    confirmations.push(special[i]);
+  var specialConf = confirm("Do you want characters?");
+  if (specialConf === true) {
+    for (var i = 0; i < special.length; i++) {
+      confirmations.push(special[i]);
+    }
   }
-}
-var randomPass = ""; 
-for ( var i = 0; i < confirmPasswordLength; i++){
-  confirmations[
-    Math.floor(Math.random() * confirmations.length)];
-    randomPass+= 
+  var randomPass = "";
+  for (var i = 0; i < confirmPasswordLength; i++) {
     confirmations[
       Math.floor(Math.random() * confirmations.length)];
-}
-return randomPass
+    randomPass +=
+      confirmations[
+      Math.floor(Math.random() * confirmations.length)];
+  }
+  return randomPass
 }
 
 
