@@ -1,5 +1,8 @@
 # password-generator
 
+# DESCRIPTION
+
+Simple password generator.
 
 # Criteria
 
