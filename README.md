@@ -1,10 +1,10 @@
 # password-generator
 
-# DESCRIPTION
+# *DESCRIPTION
 
 Simple password generator.
 
-# Criteria
+# *CRITERIA
 
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
@@ -22,7 +22,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-# Link
+# *LINK 
 
 https://george1029.github.io/password-generator/
 
