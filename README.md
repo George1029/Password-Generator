@@ -26,3 +26,4 @@ THEN the password is either displayed in an alert or written to the page
 
 https://george1029.github.io/password-generator/
 
+# Screenshot
